@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Babyblue"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/dishName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/courseSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:text="Add Menu Item"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/itemCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Menu Items: 0" />
+
+    <ListView
+        android:id="@+id/itemList"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
