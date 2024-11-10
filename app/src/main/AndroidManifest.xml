@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MAS"
         tools:targetApi="31">
         <activity
+            android:name=".loadingsplash2"
+            android:exported="false" />
+        <activity
             android:name=".loadingsplash"
             android:exported="false" />
         <activity

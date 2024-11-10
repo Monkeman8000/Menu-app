@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
             // Add your login logic here
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 Toast.makeText(this, "Logging in...", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, loadingsplash2::class.java)
                 startActivity(intent)
 
             } else {

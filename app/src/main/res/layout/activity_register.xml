@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Email"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:textAlignment="center"
                 android:textColorHint="#8A8787"
                 android:textSize="24sp" />
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Password"
-                android:inputType="text"
+                android:inputType="textPassword"
                 android:textAlignment="center"
                 android:textColorHint="#8A8787"
                 android:textSize="24sp" />
