@@ -51,6 +51,15 @@
     <ListView
         android:id="@+id/itemList"
         android:layout_width="345dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="451dp" />
+
+    <Button
+        android:id="@+id/buttongo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:onClick="loadingsplash"
+        android:text="Button"
+        android:textColor="@color/black" />
 
 </LinearLayout>

@@ -15,7 +15,7 @@ class introActivity : AppCompatActivity() {
         setContentView(R.layout.activity_intro)
         val btnstart = findViewById<Button>(R.id.buttongetstarted)
         btnstart.setOnClickListener {
-            val intent= Intent(this, MainActivity::class.java)
+            val intent= Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }

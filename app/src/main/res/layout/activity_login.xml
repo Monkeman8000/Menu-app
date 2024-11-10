@@ -67,26 +67,11 @@
         android:id="@+id/SignupButton"
         android:layout_width="179dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="21dp"
         android:backgroundTint="#ffd749"
         android:text="Login"
         app:iconTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="415dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="112dp"
-        android:gravity="center"
-        android:text="Or"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
@@ -95,7 +80,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
-        android:layout_marginEnd="14dp"
         android:gravity="center"
         android:text="Not Registered?"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -103,8 +87,9 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SignupTextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/SignupButton" />
 
     <TextView
         android:id="@+id/SignupTextView"
@@ -120,6 +105,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/SignupButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

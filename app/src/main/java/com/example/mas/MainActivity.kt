@@ -1,6 +1,7 @@
 package com.example.mas
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
         courseSpinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, courses)
 
         findViewById<Button>(R.id.addButton).setOnClickListener { addMenuItem() }
+        findViewById<Button>(R.id.buttongo).setOnClickListener {
+            val intent = Intent(this, loadingsplash::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun addMenuItem() {
@@ -67,6 +72,9 @@ class MainActivity : AppCompatActivity() {
         priceEditText.text.clear()
         courseSpinner.setSelection(0)
     }
+
+
+
+    data class MenuItem(val dishName: String, val description: String, val price: Double, val course: String)
 }
 
-data class MenuItem(val name: String, val description: String, val price: Double, val course: String)
